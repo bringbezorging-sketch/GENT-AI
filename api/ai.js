@@ -34,6 +34,7 @@ OPENINGSTIJDEN:
 
 BEZORGING:
 - Regio: Gent en omstreken.
+- Als klant wilt weten als we bepaalde locatie bezorgen leidt je hun naar de postcode check daar kunnen ze direct zien als we op hun loactie bezorgen met ook de prijzen erbij
 - Bezorgtijd: Geen exacte tijd of tracking beschikbaar. Duurt het langer dan 45 min? Adviseer contact via de website.
 - Kosten: minimum order bedrag: 15 euro bezorgkosten vanaf €2,99 (varieert per locatie).
 - Werkwijze: De bezorger belt bij aankomst eerst twee keer, daarna wordt er pas aangebeld.
