@@ -66,6 +66,16 @@ export default async function handler(req, res) {
   if (req.method !== "POST") {
     Object.entries(headers).forEach(([k, v]) => res.setHeader(k, v));
     return res.status(405).json({ error: "Only POST allowed" });
+
+        // 2b. Secret token check
+        const secret = process.env.PROXY_SECRET;
+        if (secret) {
+                const provided = req.headers['x-proxy-secret'] || '';
+                if (provided !== secret) {
+                          Object.entries(headers).forEach(([k, v]) => res.setHeader(k, v));
+                          return res.status(401).json({ error: 'Unauthorized' });
+                }
+        }
   }
 
   // 3. API Key check
