@@ -5,7 +5,8 @@ const ALLOWED_ORIGINS = [
   "https://bringbezorging.nl",
   "https://www.bringbezorging.nl",
   "https://*.myshopify.com",
-  "https://*.vercel.app"
+  "https://*.vercel.app",
+    "https://*.lovable.app"
 ];
 
 function corsHeaders(origin) {
